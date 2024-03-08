@@ -9,6 +9,9 @@ class GetPrograms:
 
     response = requests.get(URL)
     return response.content
+  
+  def program_agencies(self):
+    pass
 
 programs = GetPrograms().get_programs()
 print(programs)
